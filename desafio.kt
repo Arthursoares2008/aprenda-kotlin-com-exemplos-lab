@@ -6,7 +6,6 @@ data class ConteudoEducacional(val nome: String, val duracao: Int = 60)
 
 data class Formacao(val nome: String, val nivel: Nivel, val conteudosEducacionais: List<ConteudoEducacional>) {
 
-
     private val inscritos = mutableListOf<Aluno>()
 
     fun matricular(vararg alunos: Aluno) {
